@@ -1,7 +1,15 @@
 Neighborhood::Application.routes.draw do
-  get "pages/home"
-  get "pages/about"
-  get "pages/contact"
+
+  # get "users/new"
+
+  # get "pages/home"
+  # get "pages/about"
+  # get "pages/contact"
+  root  :to=>'pages#home'
+  match '/users/signup',:to=>'users#new'
+  match '/pages/contact',:to=>'pages#contact'
+  match '/pages/about',:to=>'pages#about'
+  match '/pages/help',:to=>'pages#help'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
