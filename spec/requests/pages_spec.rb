@@ -1,8 +1,9 @@
+#encoding: utf-8
 require 'spec_helper'
 
 describe "Pages" do
 
-  let(:base_title){"BingWen"}
+  let(:base_title){"滨文苑"}
 
   subject {page}
 

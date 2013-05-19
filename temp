@@ -1,0 +1,34 @@
+total 499825
+     4 drwxr-xr-x    1 Administ Administ     8192 May 19 00:21 .
+     4 drwxr-xr-x   46 Administ Administ     8192 May 19 00:20 ..
+     6 -rw-r--r--    1 Administ Administ    12288 May 18 21:21 .InstallEnv.swp
+     2 drwxr-xr-x   14 Administ Administ     4096 May 18 22:46 .git
+     1 -rw-r--r--    1 Administ Administ       68 May 16 00:23 .gitignore
+     1 -rw-r--r--    1 Administ Administ       15 May  9 22:30 .rspec
+     1 -rw-r--r--    1 Administ Administ       24 May  9 10:38 .rvmrc
+     1 -rw-r--r--    1 Administ Administ     1361 May 12 22:10 .tags
+     1 -rw-r--r--    1 Administ Administ     1339 May 12 22:10 .tags_sorted_by_file
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:39 .vagrant
+     1 -rw-r--r--    1 Administ Administ      555 May 18 22:31 Gemfile
+     3 -rw-r--r--    1 Administ Administ     4304 May 18 22:32 Gemfile.lock
+     2 -rw-r--r--    1 Administ Administ     2058 May 15 23:50 Guardfile
+     1 -rw-r--r--    1 Administ Administ       26 May 18 13:17 InstallEnv
+     1 -rw-r--r--    1 Administ Administ      178 Apr 30 15:20 README
+     5 -rw-r--r--    1 Administ Administ     9208 Apr 30 13:20 README.rdoc
+     1 -rwxr-xr-x    1 Administ Administ      277 Apr 30 13:20 Rakefile
+     3 -rw-r--r--    1 Administ Administ     4459 Apr 30 14:09 Vagrantfile
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:20 app
+499786 -rw-r--r--    1 Administ Administ 1023559985 May 18 23:46 chenhui.box
+     2 drwxr-xr-x    1 Administ Administ     4096 May 16 00:23 config
+     1 -rw-r--r--    1 Administ Administ      162 Apr 30 13:20 config.ru
+     0 drwxr-xr-x    1 Administ Administ        0 May  5 14:03 db
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:20 doc
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:20 lib
+     0 drwxr-xr-x    1 Administ Administ        0 May  5 13:17 log
+     2 drwxr-xr-x    1 Administ Administ     4096 May 17 21:11 public
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:20 script
+     2 drwxr-xr-x    1 Administ Administ     4096 May 16 00:23 spec
+     0 -rw-r--r--    1 Administ Administ        0 May 19  2013 temp
+     1 -rw-r--r--    1 Administ Administ       99 May 18 14:32 test
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:55 tmp
+     0 drwxr-xr-x    1 Administ Administ        0 Apr 30 13:20 vendor
