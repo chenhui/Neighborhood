@@ -1,19 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
 	<title><%= full_title(yield(:title))%></title>
-	<link rel="stylesheet" type="text/css" href="style.css" />      
+	<%= stylesheet_link_tag "application",media:"all" %>
+	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tag %>
-	<%= render 'layouts/stylesheets' %>
-</head>
-<body>
-	<div class="container">
-		<%= render 'layouts/header' %>
-		<section class="round">
-			<%= yield %>
-		</section>
-		<%=render 'layouts/footer' %>
-	</div>
-</body>
-</html>
+  <%= render 'layouts/shim' %>
+ </head>     
+  <body>
+    <%= render 'layouts/header' %>
+  	<div class="container">
+  		<%= yield %>
+  	</div>
+    <%= render 'layouts/footer' %>
+  </body>
+  </html>

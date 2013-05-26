@@ -1,16 +1,14 @@
-<footer>
-  
-  <div id="footer">
-    <div class="footer_links">
-      <a href="sc.chinaz.com" title="">首页 </a>
-      <a href="sc.chinaz.com" title="">关于滨文苑</a>
-      <a href="sc.chinaz.com" title="">服务</a>
-      <a href="sc.chinaz.com" title="">联系我们</a>       
-    </div>
-    <div class="copyright">
-      <a href="sc.chinaz.com">陈辉出品</a>
-    </div>
-  </div>
-
+<footer class="footer">
+  <small>
+    <a href="http://railstutorial.org">陈辉出品</a>
+  </small>
+  <nav>
+   <ul>
+    <li><%=link_to "首页",root_path %></li>
+    <li><%=link_to "关于滨文苑",pages_about_path %></li> 
+    <li><%=link_to "联系我们",pages_contact_path %></li>
+    <li><%=link_to "帮助",pages_help_path  %></li>
+   </ul> 
+  </nav>
 </footer>
 

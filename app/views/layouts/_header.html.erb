@@ -1,29 +1,22 @@
-<header>
-		<div class ="person">
-            <div>
-                <ul class="menu">
-                    <li><a href="sc.chinaz.com" class="nav">我的家园</a></li>
-                    <li><a href="sc.chinaz.com" class="nav">个人中心</a></li>
-                    <li><a href="sc.chinaz.com" class="nav">登陆</a></li>
-                    <li><a href="sc.chinaz.com" class="nav">注册</a></li>
-                </ul>
-            </div>
-        </div>
-
-		<div id="top_banner">
-       		<div id="left_logo"><a href="index.html"><img src="images/logo.gif" border="0" alt="logo" /></a></div>
-        </div>
-        
-        <div id="page_content">
-            <div>
-                <ul class="menu">
-                    <li><a href="sc.chinaz.com" class="nav">首页</a></li>
-                    <li><a href="sc.chinaz.com" class="nav_even">社区新闻</a></li>
-                    <li><a href="sc.chinaz.com" class="nav">社区服务</a></li>
-                    <li><a href="sc.chinaz.com" class="nav_even">业委会</a></li>
-                    <li><a href="sc.chinaz.com" class="nav">社区论坛</a></li>
-                    <li><a href="sc.chinaz.com" class="nav_even">事物公决</a></li>
-                </ul>
-            </div>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to image_tag("logo.gif",alt:"滨文苑"),'#' %></li>
+          <li><%= link_to "首页",root_path %></li>
+          <li><%= link_to "社区新闻",'#' %></li>
+          <li><%= link_to "社区服务",'#' %></li>
+          <li><%= link_to "物业",'#' %></li>
+          <li><%= link_to "业委会",'#' %></li>
+          <li><%= link_to "社区论坛",'#' %></li>
+          <li><%= link_to "事物公决",'#' %></li>
+          <li><%= link_to "社区微博",'#' %></li>
+          <li><%= link_to "个人中心",'#' %></li>
+          <li><%= link_to "登陆",'#' %></li>
+          <li><%= link_to "注册",users_signup_path %></li>
+        </ul>   
+      </nav>
+    </div>
+  </div>
 </header>
-			

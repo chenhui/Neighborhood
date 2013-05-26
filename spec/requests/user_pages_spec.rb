@@ -6,7 +6,7 @@ describe "UserPages" do
 
   describe "User pages" do
   	before{visit users_signup_path}
-  	it {should have_selector('h1',text:'Sign up')}
-  	it {should have_selector('title',text:"滨文苑 | Sign up") }
+  	it {should have_selector('h1',text:'注册')}
+  	it {should have_selector('title',text:"滨文苑 | 注册") }
   end
 end
