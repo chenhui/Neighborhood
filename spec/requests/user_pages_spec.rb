@@ -1,4 +1,4 @@
-#encoding:utf-8
+#encoding: utf-8
 require 'spec_helper'
 
 describe "UserPages" do
@@ -55,6 +55,7 @@ describe "UserPages" do
 				let(:user){User.find_by_email('user@example.com')}
 				it{should have_selector('title',text:user.name)}
 				it{should have_selector('div.alert.alert-success',text:'Welcome')}
+				it{should have_link('注销')}
 			end
 
 		end
