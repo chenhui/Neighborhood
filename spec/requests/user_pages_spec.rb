@@ -6,7 +6,7 @@ describe "UserPages" do
 	subject{page}
 
 	describe "Signup page" do
-		before{visit users_signup_path}
+		before{visit signup_path}
 		it {should have_selector('h1',text:'注册')}
 		it {should have_selector('title',text:"滨文苑 | 注册") }
 	end
@@ -20,7 +20,7 @@ describe "UserPages" do
 
 	describe "signup" do
 
-		before{visit users_signup_path}
+		before{visit signup_path}
 
 		let(:submit){"Create my account"}
 

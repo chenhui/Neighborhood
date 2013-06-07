@@ -6,7 +6,7 @@ Neighborhood::Application.routes.draw do
   # get "pages/about"
   # get "pages/contact"
   root  :to=>'pages#home'
-  match '/users/signup',:to=>'users#new'
+  match '/signup',:to=>'users#new'
   match '/signin', to:'sessions#new'
   match '/signout', to:'sessions#destroy',via: :delete
   match '/pages/contact',:to=>'pages#contact'
