@@ -6,12 +6,15 @@ Neighborhood::Application.routes.draw do
   # get "pages/about"
   # get "pages/contact"
   root  :to=>'pages#home'
-  match '/users/signup',:to=>'users#new'
+  match '/signup',:to=>'users#new'
+  match '/signin', to:'sessions#new'
+  match '/signout', to:'sessions#destroy',via: :delete
   match '/pages/contact',:to=>'pages#contact'
   match '/pages/about',:to=>'pages#about'
   match '/pages/help',:to=>'pages#help'
 
   resources  :users
+  resources  :sessions,only:[:new,:create,:destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
