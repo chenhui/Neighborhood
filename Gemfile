@@ -7,6 +7,9 @@ gem 'magic_encoding'
 gem 'bcrypt-ruby','3.0.1'
 gem 'execjs'
 gem 'therubyracer'
+gem 'faker','1.0.1'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate','0.0.6'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
