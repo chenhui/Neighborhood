@@ -29,7 +29,7 @@ describe "Authentication" do
 			it{should have_link('个人中心',href:user_path(user))}
 			it{should have_link('注销',href:signout_path)}
 			it{should_not have_link('Sign in',href:signin_path)}
-			it {should have_link('设置',href:edit_user_path)}
+			it {should have_link('设置',href:edit_user_path(user))}
 
 			describe "followed by signout" do
 				before{ click_link  "注销"}
@@ -59,6 +59,18 @@ describe "Authentication" do
 
 			end
 
+		end
+
+		describe "as non_admin user" do
+			let(:user){FactoryGirl.create(:user)}
+			let(:non_admin){FactoryGirl.create(:user)}
+
+			before{sign_in non_admin}
+
+			describe "submitting a DELETE request to the Users#destroy action" do
+				before{delete user_path(user)}
+				specify {response.should redirect_to(root_path)}
+			end
 		end
 
 		describe "as wrong user" do
