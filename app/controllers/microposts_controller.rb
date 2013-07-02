@@ -2,10 +2,6 @@ class MicropostsController < ApplicationController
 	before_filter :signed_in_user ,only:[:create,:destroy]
 	before_filter :correct_user,only: :destroy
 
-	def index
-		
-	end
-
 	def create
 		@micropost=current_user.microposts.build(params[:micropost])
 		if @micropost.save
@@ -19,7 +15,7 @@ class MicropostsController < ApplicationController
 
 	def destroy
 		@micropost.destroy	
-		redirect_to root_url
+		redirect_back_or root_path
 	end
 
 	private

@@ -13,9 +13,15 @@ Neighborhood::Application.routes.draw do
   match '/pages/about',:to=>'pages#about'
   match '/pages/help',:to=>'pages#help'
 
-  resources  :users
+  resources :users do
+    member do
+     get :following ,:followers 
+    end 
+  end
+
   resources  :sessions,only:[:new,:create,:destroy]
   resources  :microposts,only:[:create,:destroy,:show]
+  resources  :relationships,only:[:create,:destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
